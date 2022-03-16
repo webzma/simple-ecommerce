@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-mobile.css" media="(max-width: 773px)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-links">
+      <ul>
+        <li>
+          <img src="images/icon-menu.svg" alt="icon menu" class="menu-icon">
+        </li>
+        <li>
+          <a href="#" class="title">sneakers</a>
+        </li>
+
+        <li class="links-desktop">
+          <a href="#"></a>
+        </li>
+        <li class="links-desktop">
+          <a href="#">Collections</a>
+        </li>
+        <li class="links-desktop">
+          <a href="#">Men</a>
+        </li>
+        <li class="links-desktop">
+          <a href="#">Women</a>
+        </li>
+        <li class="links-desktop">
+          <a href="#">About</a>
+        </li>
+        <li class="links-desktop">
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-profile">
+      <ul>
+        <div class="howMany">
+          <p id="howMany">0</p>
+        </div>
+        <li>
+          <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+              class="nav-logo-cart" fill-rule="nonzero" /></svg>
+        </li>
+        <li>
+          <img src="images/image-avatar.png" alt="" class="profile">
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <div>
+      <img src="images/icon-close-black.svg" alt="Exit" id="exit">
+    </div>
+    <ul>
+      <li><a href="#">Collections</a></li>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <section class="product-container">
+    <div class="images-container">
+      <div class="previus">
+        <img src="images/icon-previous.svg" alt="Imagen previa">
+      </div>
+      <img src="images/image-product-1.jpg" alt="imagen de procucto" class="main-image">
+      <div class="next">
+        <img src="images/icon-next.svg" alt="Imagen siguiente">
+      </div>
+      <div class="cards-images">
+        <img src="images/image-product-1.jpg" alt="imagen de procucto" name="card-image">
+        <img src="images/image-product-2.jpg" alt="imagen de procucto" name="card-image">
+        <img src="images/image-product-3.jpg" alt="imagen de procucto" name="card-image">
+        <img src="images/image-product-4.jpg" alt="imagen de procucto" name="card-image">
+      </div>
+    </div>
+    <div class="product-content">
+      <div class="content">
+        <p>Sneaker Company</p>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <p>
+          $125.00
+          <span>50%</span>
+        </p>
+        <p>$250.00</p>
+
+        <div class="container-buttons">
+          <div class="buttons">
+            <button id="minus">
+              <img src="images/icon-minus.svg" alt="minus">
+            </button>
+            <p id="nums-product">0</p>
+            <button id="plus">
+              <img src="images/icon-plus.svg" alt="plus">
+            </button>
+          </div>
+          <button class="button-add-to-cart">
+            <img src="images/icon-cart.svg" alt="carrito de compra">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-cart-empty">
+      <div>
+        <p>Cart</p>
+      </div>
+      <div>
+        <p>Your cart is empty</p>
+      </div>
+    </div>
+
+    <div class="modal-cart-full">
+      <div class="modal-title">
+        <p>Cart</p>
+      </div>
+
+      <div class="products-buy">
+      
+      </div>
+
+      <button id="checkout">Checkout</button>
+    </div>
+  </section>
+
+  <div class="lightbox">
+    <div>
+      <img src="images/icon-close.svg" alt="Cerrar" class="close">
+      <div class="previus">
+        <img src="images/icon-previous.svg" alt="Imagen previa">
+      </div>
+      <img src="images/image-product-1.jpg" alt="Imagen principal de producto" class="main-image main-image-lightbox">
+      <div class="next">
+        <img src="images/icon-next.svg" alt="Imagen siguiente">
+      </div>
+    </div>
+    <div class="cards-images cards-images-lightbox">
+      <img src="images/image-product-1.jpg" alt="imagen de producto" name="card-image-lightbox">
+      <img src="images/image-product-2.jpg" alt="imagen de producto" name="card-image-lightbox">
+      <img src="images/image-product-3.jpg" alt="imagen de producto" name="card-image-lightbox">
+      <img src="images/image-product-4.jpg" alt="imagen de producto" name="card-image-lightbox">
+    </div>
+  </div>
+
+  <script src="js/cart.js"></script>
+  <script src="js/mobile-menu.js"></script>
+  <script src="js/lightbox.js"></script>
+</body>
+
+</html>
